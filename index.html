@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>FORMS</h1>
+
+    <form action="#" method="POST">
+        <!-- Name Field -->
+        <p>
+            <label for="name">Name </label>
+            <input type="text" id="name" name="name" placeholder="Name">
+        </p>
+
+        <!-- Email Field -->
+        <p>
+            <label for="email">Email-id </label>
+            <input type="email" id="email" name="email" placeholder="Email-id">
+        </p>
+
+        <!-- Password Field -->
+        <p>
+            <label for="password">Password </label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </p>
+
+        <!-- Language Radio Buttons -->
+        <p>Language</p>
+        <p>
+            <input type="radio" id="html" name="language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="js" name="language" value="JS">
+            <label for="js">JS</label>
+        </p>
+
+        <!-- Course Checkboxes -->
+        <p>Course</p>
+        <p>
+            <input type="checkbox" id="java" name="course" value="Java Stack">
+            <label for="java">Java Stack</label><br>
+            <input type="checkbox" id="datascience" name="course" value="Data Science">
+            <label for="datascience">Data Science</label><br>
+            <input type="checkbox" id="mern" name="course" value="Mern Stack">
+            <label for="mern">Mern Stack</label>
+        </p>
+
+        <!-- Field Dropdown Selection -->
+        <p>Field:</p>
+        <p>
+            <select name="field" id="field">
+                <option value="">Select</option>
+            </select>
+        </p>
+
+        <!-- Description Textarea -->
+        <p>
+            <textarea id="description" name="description" placeholder="Describe yourself" rows="3" cols="25"></textarea>
+        </p>
+
+        <!-- Date Picker Field -->
+        <p>Date</p>
+        <p>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <!-- Phone Number Field -->
+        <p>
+            <label for="phone">Phone No. </label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone NO.">
+        </p>
+
+        <!-- Submit Button -->
+        <p>
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <!-- Footer Link -->
+    <p>
+        <a href="#">Click Here For Table File</a>
+    </p>
+
+</body>
+</html>
