@@ -1,0 +1,88 @@
+function countCharacters(S) {
+    let countA = 0;
+    let countD = 0;
+    
+    for (let char of S) {
+        if (char === 'A') countA++;
+        if (char === 'D') countD++;
+    }
+    
+    return [countA, countD];
+}
+function Count_Head(S) {
+    let counts = {};
+    for (let char of S) {
+        counts[char] = (counts[char] || 0) + 1;
+    }
+    
+    // Sort keys alphabetically and filter those occurring > 1
+    return Object.keys(counts)
+        .sort()
+        .filter(char => counts[char] > 1)
+        .map(char => char + counts[char])
+        .join('');
+}
+function Count_Vowel(S) {
+    const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']);
+    let count = 0;
+    
+    for (let char of S) {
+        if (vowels.has(char)) {
+            count++;
+        }
+    }
+    return count;
+}
+function Concatenate_Strings(S1, S2) {
+    return S1.concat(S2);
+}
+function findLength(S) {
+    let length = 0;
+    for (let char of S) {
+        length++;
+    }
+    return length;
+}
+function Game_Winner(S) {
+    let aditya = 0;
+    let danish = 0;
+    
+    for (let char of S) {
+        if (char === 'A') aditya++;
+        if (char === 'D') danish++;
+    }
+    
+    if (aditya > danish) return "Aditya";
+    if (danish > aditya) return "Danish";
+    return "Draw";
+}
+function joinStrings(S, P) {
+    return S + P;
+}
+function Plain_Check(S) {
+    let reversed = S.split('').reverse().join('');
+    return S === reversed ? "True" : "False";
+}
+function String_Match(S1, S2) {
+    return S1 === S2 ? "YES" : "NO";
+}
+function Count_Vowels(S) {
+    const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']);
+    let count = 0;
+    for (let char of S) {
+        if (vowels.has(char)) count++;
+    }
+    return count;
+}
+
+function Count_Consonants(S) {
+    const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']);
+    let count = 0;
+    for (let char of S) {
+        // Ensuring the character is a valid alphabet letter and not a vowel
+        if (/[a-zA-Z]/.test(char) && !vowels.has(char)) {
+            count++;
+        }
+    }
+    return count;
+}
