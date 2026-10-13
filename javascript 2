@@ -1,0 +1,38 @@
+function AddTwoNumbers(A, B) {
+    return A + B;
+}
+function Is_Valid(A, B) {
+    return (A < 10 && A > B);
+}
+function Check(A, B) {
+    if (A % 10 === 0 || B % 10 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+function First_Digit(N) {
+    // Math.floor(4567 / 1000) -> 4
+    return Math.floor(N / 1000);
+}
+function Last_Digit(N) {
+    // 4567 % 10 -> 7
+    return N % 10;
+}
+function Find_the_remainder(A, B) {
+    // Divisor is A, Dividend is B (B % A)
+    return B % A;
+}
+function Multiply_two_number(A, B) {
+    return A * B;
+}
+function Sum(A, B, C) {
+    return A + B + C;
+}
+
+function Average(A, B, C) {
+    const total = A + B + C;
+    const avg = total / 3;
+    // Returns average rounded to 2 decimal places to match sample output
+    return parseFloat(avg.toFixed(2));
+}
